@@ -1,1 +1,1 @@
-AdGuard Home白名单
+AdGuardHome 白名单
