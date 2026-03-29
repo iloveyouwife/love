@@ -1,1 +1,1 @@
-# love
+AdGuard Home白名单
