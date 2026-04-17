@@ -3,7 +3,7 @@ name: Build AdGuard Rules
 on:
   schedule:
     - cron: "0 */6 * * *"    # 每6小时更新一次
-  workflow_dispatch:         # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   build:
@@ -24,14 +24,15 @@ jobs:
           done < lists.txt
           echo "规则下载完成！"
 
-      - name: Clean rules（安全高级去重）
+      - name: Clean rules（高级去重 + 优化）
         run: |
           echo "开始清理和去重规则..."
           
-          # 高级清理：去注释、去空行、去首尾空格、严格去重
+          # 高级清理：去注释、去空行、去首尾空格、行内空格标准化、严格去重
           awk '
             !/^[[:space:]]*[#!]/ && NF > 0 {
-              gsub(/^[[:space:]]+|[[:space:]]+$/, "");
+              gsub(/^[[:space:]]+|[[:space:]]+$/, "");   # 去首尾空格
+              gsub(/[[:space:]]+/, " ");                 # 行内多余空格标准化
               if (length($0) > 0) print
             }
           ' rules/all.txt | sort -u > merged.txt
