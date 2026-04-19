@@ -1,2 +1,3 @@
 https://raw.githubusercontent.com/Cats-Team/AdRules/main/mod/rules/dns-allowlist.txt
+https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt
 https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt
