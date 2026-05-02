@@ -528,6 +528,7 @@ sf1-ttcdn-tos.pstatp.com
 sf3-ttcdn-tos.pstatp.com
 sf6-ttcdn-tos.pstatp.com
 sfp.safe.baidu.com
+sgali-mcs.byteoversea.com
 shifen.com
 shopify.com
 short-video.kakamobi.cn
