@@ -187,6 +187,7 @@ dl.zuimeitianqi.com
 dldir1.qq.com
 doublecklick.net
 down.360safe.com
+drcn-weather.cloud.huawei.com
 du.163.com
 duckdns.org
 duiba.com.cn
@@ -294,6 +295,7 @@ huichuan-mc.sm.cn^
 huichuan.sm.cn^
 huluxia.com
 huoying666.com
+hw.zuimeitianqi.com
 i.niupic.com
 iask.cn^
 iask.com.cn^
